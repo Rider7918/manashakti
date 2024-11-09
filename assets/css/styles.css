@@ -7,8 +7,8 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --hue: 152;
-  --first-color: hsl(var(--hue), 24%, 32%);
+  --hue: 233;
+  --first-color: hsl(var(--hue), 76%, 64%);
   --first-color-alt: hsl(var(--hue), 24%, 28%);
   --first-color-light: hsl(var(--hue), 24%, 66%);
   --first-color-lighten: hsl(var(--hue), 24%, 92%);
@@ -143,10 +143,7 @@ the website, in dark theme
   background-color: var(--first-color-dark);
 }
 
-.dark-theme .product__circle,
-.dark-theme .footer__subscribe{
-  background-color: var(--container-color);
-}
+
 
 .dark-theme .scroll-header{
   box-shadow: 0 1px 4px hsla(var(--hue), 4%, 4%, .3);
@@ -313,7 +310,7 @@ the website, in dark theme
 }
 
 .home__img{
-  width: 200px;
+  width: 300px;
   justify-self: center;
 }
 
@@ -416,7 +413,7 @@ the website, in dark theme
 }
 
 .about__img{
-  width: 280px;
+  width: 350px;
   justify-content: center;
 }
 
@@ -446,6 +443,10 @@ the website, in dark theme
   margin-top: .15rem;
 }
 /*=============== STEPS ===============*/
+
+.steps{
+  margin-bottom: var(--mb-1-5);
+}
 
 .steps__bg{
   background-color: var(--first-color);
@@ -491,70 +492,7 @@ the website, in dark theme
 .steps__card:hover .steps__card-number{
   transform: translateY(-.25rem);
 }
-/*=============== PRODUCTS ===============*/
 
-.products__description{
-  text-align: center;
-}
-
-.product__container{
-  padding: 3rem 0;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem 3rem;
-}
-
-.product__card{
-  display: grid;
-  position: relative;
-}
-
-.product__img{
-  position: relative;
-  width: 120ox;
-  justify-content: center;
-  margin-bottom: var(--mb-0-75);
-  transition: .3s;
-}
-
-.product__title,
-.product__price{
-  font-size: var(--small-font-size);
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
-}
-
-.product__title{
-  margin-bottom: .25rem;
-}
-
-.product__button{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  color: #FFF;
-  padding: .25rem;
-  border-radius: .35rem;
-  font-size: 1.15rem;
-}
-
-.product__button:hover{
-  background-color: var(--first-color-alt);
-}
-
-.product__circle{
-  width: 90px;
-  height: 90px;
-  background-color: var(--first-color-lighten);
-  border-radius: 50%;
-  position: absolute;
-  top: 18%;
-  left: 5%;
-}
-
-.product__card:hover .product__img{
-  transform: translateY(-.5rem);
-}
 /*=============== QUESTIONS ===============*/
 
 .questions{
@@ -859,7 +797,7 @@ the website, in dark theme
   }
 
   .home__img{
-    width: 180px;
+    width: 250px;
   }
 
   .home__title{
@@ -874,10 +812,7 @@ the website, in dark theme
     padding: 1.5rem;
   }
 
-  .product__container{
-    grid-template-columns: .6fr;
-    justify-content: center;
-  }
+
 
 
 }
@@ -887,16 +822,6 @@ the website, in dark theme
 @media screen and (min-width: 576px){
   .steps__container{
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .products__description{
-    padding: 0 4rem;
-  }
-
-  .product__container{
-    grid-template-columns: repeat(2, 170px);
-    justify-content: center;
-    column-gap: 5rem;
   }
 
   .footer__subscribe{
@@ -945,7 +870,7 @@ the website, in dark theme
   }
 
   .home__img{
-    width: 280px;
+    width: 300px;
     order: 1;
   }
 
@@ -986,7 +911,7 @@ the website, in dark theme
   }
 
   .home__img{
-    width: 350px;
+    width: 450px;
   }
 
   .home__description{
@@ -994,7 +919,7 @@ the website, in dark theme
   }
 
   .about__img{
-    width: 380px;
+    width: 500px;
   }
 
   .steps__container{
@@ -1009,29 +934,6 @@ the website, in dark theme
     font-size: var(--normal-font-size);
   }
 
-  .products__description{
-    padding: 0 16rem;
-  }
-
-  .product__container{
-    padding: 4rem 0;
-    grid-template-columns: repeat(3, 185px);
-    gap: 4rem 6rem;
-  }
-
-  .product__img{
-    width: 160px;
-  }
-
-  .product__circle{
-    width: 110px;
-    height: 110px;
-  }
-
-  .product__title,
-  .product__price{
-    font-size: var(--normal-font-size);
-  }
 
   .questions__container{
     padding: 1rem 0 4rem;
