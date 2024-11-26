@@ -220,6 +220,12 @@ the website, in dark theme
   color: var(--first-color);
 }
 
+.nav__logo-img{
+  width: 8.5rem; /* Adjust the size of your image */
+  height: 8.5rem;
+  margin-right: 5px; /* Space between the image and text */
+}
+
 .nav__logo:hover{
   color: var(--first-color);
 }
