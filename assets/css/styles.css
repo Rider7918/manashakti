@@ -422,6 +422,7 @@ the website, in dark theme
 }
 
 .about__description{
+  font-size: var(--normal-font-size);
   margin-bottom: var(--mb-2);
 }
 
@@ -486,7 +487,7 @@ the website, in dark theme
 }
 
 .steps__card-description{
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size));
 }
 
 .steps__card:hover .steps__card-number{
@@ -714,7 +715,7 @@ the website, in dark theme
 }
 
 .footer__information{
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
 }
 
 .footer__social{
