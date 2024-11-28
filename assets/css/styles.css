@@ -502,6 +502,42 @@ the website, in dark theme
   transform: translateY(-.25rem);
 }
 
+
+/*=============== Experience ===============*/
+
+.experience{
+  margin-bottom: var(--mb-1-5);
+}
+
+.experience__title{
+  text-align: initial;
+  margin-bottom: var(--mb-1-5);
+}
+
+.experience__content{
+  row-gap: 2rem;
+}
+
+.experience__data{
+  row-gap: 1rem;
+}
+
+.experience__company{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.experience__profession{
+  font-size: var(--h2-font-size);
+  margin-bottom: .25rem;
+}
+
+.experience__date{
+  display: block;
+  font-size: var(--smaller-font-size);
+  margin-bottom: .75rem;
+}
+
 /*=============== QUESTIONS ===============*/
 
 .questions{
@@ -821,6 +857,10 @@ the website, in dark theme
     padding: 1.5rem;
   }
 
+  .experience__content{
+    justify-content: center;
+  }
+
 
 
 
@@ -836,6 +876,10 @@ the website, in dark theme
   .footer__subscribe{
     width: 400px;
   }
+  
+  .experience__data{
+    grid-template-columns: repeat(2,1fr);
+   }
 }
 
 @media screen and (min-width: 767px){
@@ -873,8 +917,8 @@ the website, in dark theme
   .home{
     padding: 10rem 0 5rem;
   }
-
-  .home__container{
+  
+  .home__container,experience__content{
     align-items: center;
   }
 
@@ -886,6 +930,10 @@ the website, in dark theme
   .home__social{
     top: 30%;
   }
+
+ .experience__data{
+  grid-template-columns: repeat(2,1fr);
+ }
 
   .questions__container{
     align-items: flex-start;
@@ -932,7 +980,7 @@ the website, in dark theme
   }
 
   .steps__container{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .steps__bg{
@@ -963,6 +1011,7 @@ the website, in dark theme
   .questions__description{
     padding: 0 3.5rem 2.25rem 2.75rem;
   }
+  
 
   .footer__logo{
     font-size: var(--h3-font-size);
@@ -997,6 +1046,15 @@ the website, in dark theme
 
   .about__container{
     column-gap: 7rem;
+  }
+
+  .experience__content{
+    row-gap: 4rem;
+  }
+
+  .experience__data{
+    grid-template-columns: 320px 380px;
+    column-gap: 11.5rem;
   }
 
   .scrollup{

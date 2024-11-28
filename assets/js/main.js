@@ -152,6 +152,6 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data`)
 sr.reveal(`.home__img`,{delay: 500})
 sr.reveal(`.home__social`,{delay: 600})
-sr.reveal(`.about__img, .contact__box`,{origin: 'left'})
-sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
+sr.reveal(`.about__img, .contact__box, .experience__company`,{origin: 'left'})
+sr.reveal(`.about__data, .contact__form, .experience__info`,{origin: 'right'})
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 100})
