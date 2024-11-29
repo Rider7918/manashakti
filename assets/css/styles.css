@@ -1014,7 +1014,7 @@ the website, in dark theme
   
 
   .footer__logo{
-    font-size: var(--h3-font-size);
+    width: 10rem;
   }
 
   .footer__container{
