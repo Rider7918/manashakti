@@ -523,12 +523,12 @@ the website, in dark theme
 }
 
 .experience__company{
-  font-size: var(--h2-font-size);
+  font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
 }
 
 .experience__profession{
-  font-size: var(--h2-font-size);
+  font-size: var(--h3-font-size);
   margin-bottom: .25rem;
 }
 
