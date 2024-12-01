@@ -547,7 +547,7 @@ the website, in dark theme
 .slide-container{
   max-width: 1120px;
   width: 100%;
-  padding: 40px;
+  padding: 40px 0;
   display: flex;
   justify-content: center;
   align-items: center;
