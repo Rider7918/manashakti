@@ -18,6 +18,7 @@ if (navClose) {
   });
 }
 
+
 /*=============== REMOVE MENU MOBILE ===============*/
 
 const navLink = document.querySelectorAll(".nav__link");
@@ -39,7 +40,11 @@ function scrollHeader() {
   else header.classList.remove("scroll-header");
 }
 
+
 window.addEventListener("scroll", scrollHeader);
+
+
+
 /*=============== QUESTIONS ACCORDION ===============*/
 
 const accordionItems = document.querySelectorAll(".questions__item");
@@ -102,6 +107,42 @@ function scrollUp(){
   if(this.scrollY >= 200) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll',scrollUp)
+
+
+/*=============== SWIPER CARD ===============*/
+
+
+var swiper = new Swiper(".slide-content", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  loop: true,
+  centerSlide: 'true',
+  fade: 'true',
+  grabCursor: 'true',
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets:true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints:{
+    0:{
+      slidesPerView: 1
+    },
+    520:{
+      slidesPerView: 2
+    },
+    950:{
+      slidesPerView: 3
+    }
+  }
+});
+
+
+
 /*=============== DARK LIGHT THEME ===============*/
 
 const themeButton =document.getElementById('theme-button')
@@ -139,6 +180,7 @@ themeButton.addEventListener('click',() =>{
 })
 
 
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
 const sr = ScrollReveal({
@@ -155,3 +197,5 @@ sr.reveal(`.home__social`,{delay: 400})
 sr.reveal(`.about__img, .contact__box, .experience__company`,{origin: 'left'})
 sr.reveal(`.about__data, .contact__form, .experience__info`,{origin: 'right'})
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 100})
+
+

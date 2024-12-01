@@ -22,6 +22,9 @@
     <!--=============== REMIX ICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
+    <!--=============== Swiper Card  ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -191,47 +194,49 @@
                 </div>
             </div>
         </section>
-        <!--==================== Certificate ====================-->
-        <section class="experience section " id="certificate">
-            <div class="experience"></div>
+        <!--==================== Test Card ====================-->
+
+        <section class="slide ">
             <h2 class="section__title-center experience__title  container">Experience</h2>
-            <div class="experience__content grid container">
-                <div class="experience__data grid">
-                    <h2 class="experience__company"> MBBS</h2>
-                    <div class="experience__info">
-                        <h3 class="experience__profession">GMC, Goa</h3>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="card-content">
+                                <h2 class="name">MBBS <br></h2>
+                                <p class="card__description">GMC, Goa</p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="card-content">
+                                <h2 class="name">Junior Resident</h2>
+                                <p class="card__description">IPHB, Goa</p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="card-content">
+                                <h2 class="name">Bond Psychiatrist</h2>
+                                <p class="card__description">SGDH, Goa</p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="card-content">
+                                <h2 class="name">Consultant Psychiatrist</h2>
+                                <p class="card__description">DMHP, SGDH, Goa</p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="card-content">
+                                <h2 class="name">Senior Consultant Psychiatrist</h2>
+                                <p class="card__description">Tele MANAS, MI, IPHB</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="experience__data grid">
-                    <h2 class="experience__company">Junior Resident</h2>
-                    <div class="experience__info">
-                        <h3 class="experience__profession">IPHB, Goa</h3>
-                    </div>
-                </div>
-
-                <div class="experience__data grid">
-                    <h2 class="experience__company">Bond Psychiatrist</h2>
-                    <div class="experience__info">
-                        <h3 class="experience__profession">SGDH, Goa</h3>
-                    </div>
-                </div>
-
-                <div class="experience__data grid">
-                    <h2 class="experience__company">Consultant Psychiatrist</h2>
-                    <div class="experience__info">
-                        <h3 class="experience__profession">DMHP, SGDH, Goa</h3>
-                    </div>
-                </div>
-                <div class="experience__data grid">
-                    <h2 class="experience__company">Senior Consultant Psychiatrist</h2>
-                    <div class="experience__info">
-                        <h3 class="experience__profession">Tele MANAS, MI, IPHB</h3>
-                    </div>
-                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
             </div>
-
-
         </section>
 
         <!--==================== QUESTIONS ====================-->
@@ -433,7 +438,7 @@
 
                 <ul class="footer__data">
                     <li class="footer__information">Almeida's Clinic,<br>Baboy Commerce Center,<br>Next to Krishna
-                        Medical Stores,br Margao, Goa 403601</li>
+                        Medical Stores,<br> Margao, Goa 403601</li>
                 </ul>
             </div>
 
@@ -474,10 +479,20 @@
     <!--=============== SCROLL REVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
 
+      <!--=============== Swiper Card ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    
+  
+    
     <!--=============== FORM RESET ===============-->
     <script src="assets/js/formReset.js"></script>
+
+
+
 </body>
 
 </html>

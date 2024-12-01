@@ -505,13 +505,14 @@ the website, in dark theme
 
 /*=============== Experience ===============*/
 
-.experience{
-  margin-bottom: var(--mb-1-5);
+.slide{
+  margin-bottom: var(--mb-2-5);
 }
 
+
+
 .experience__title{
-  text-align: initial;
-  margin-bottom: var(--mb-1-5);
+  margin-bottom: var(--mb-0-75);
 }
 
 .experience__content{
@@ -538,6 +539,88 @@ the website, in dark theme
   margin-bottom: .75rem;
 }
 
+/*=============== Test Card ===============*/
+
+
+
+
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+
+.card-content{
+  min-height: 160px;
+  display: flex;
+  background-color: var(--first-color-dark);
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 14px;
+}
+
+
+.name{
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  color: var(--title-color);
+}
+
+.card__description{
+  font-size: 14px;
+  color: var(--title-color);
+  text-align: center
+}
+
+.card__button{
+  margin: 14px;
+}
+
+.swiper-navBtn{
+  color: var(--first-color);
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover{
+  color: black;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 40px;
+}
+
+.swiper-button-next{
+  right: 0;
+}
+
+.swiper-button-prev{
+  left  : 0;
+}
+
+.swiper-pagination-bullet{
+  background-color: var(--text-color);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+  opacity: 1;
+}
 /*=============== QUESTIONS ===============*/
 
 .questions{
@@ -862,8 +945,6 @@ the website, in dark theme
   }
 
 
-
-
 }
 
 /* For medium devices */
@@ -880,6 +961,13 @@ the website, in dark theme
   .experience__data{
     grid-template-columns: repeat(2,1fr);
    }
+
+}
+
+@media screen and (max-width: 768px){
+  .swiper-navBtn{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 767px){
@@ -946,6 +1034,8 @@ the website, in dark theme
   .footer__subscribe{
     width: initial;
   }
+
+  
 }
 /* For large devices */
 @media screen and (min-width: 992px){
