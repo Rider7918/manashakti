@@ -139,10 +139,17 @@ the website, in dark theme
 ==========*/
 
 .dark-theme .steps__bg,
-.dark-theme .questions{
+.dark-theme .questions,
+.dark-theme .card-content{
   background-color: var(--first-color-dark);
 }
 
+
+
+.dark-theme .name,
+.dark-theme .card__description{
+  color: var(--title-color);
+}
 
 
 .dark-theme .scroll-header{
@@ -510,39 +517,9 @@ the website, in dark theme
 }
 
 
-
 .experience__title{
   margin-bottom: var(--mb-0-75);
 }
-
-.experience__content{
-  row-gap: 2rem;
-}
-
-.experience__data{
-  row-gap: 1rem;
-}
-
-.experience__company{
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-semi-bold);
-}
-
-.experience__profession{
-  font-size: var(--h3-font-size);
-  margin-bottom: .25rem;
-}
-
-.experience__date{
-  display: block;
-  font-size: var(--smaller-font-size);
-  margin-bottom: .75rem;
-}
-
-/*=============== Test Card ===============*/
-
-
-
 
 .slide-container{
   max-width: 1120px;
@@ -567,7 +544,7 @@ the website, in dark theme
 .card-content{
   min-height: 160px;
   display: flex;
-  background-color: var(--first-color-dark);
+  background-color: var(--first-color-lighten);
   flex-direction: column;
   align-items: center;
   padding: 35px 14px;
